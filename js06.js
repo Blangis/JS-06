@@ -24,7 +24,7 @@
 const USER1 = document.querySelector("#uno");
 
 
-const USERS = [ {
+const usuarios = [ {
     id: 1,
     username: "booklover123",
     descrip: "Avid reader and coffe anthusiast",
@@ -52,13 +52,28 @@ const USERS = [ {
 }
 ];
 
+//Secciones
 
-const card = document.createElement("div");
-const id= document.createElement("h4");
-const usuario = document.createElement("h1");
-const descrip = document.createElement("h2");
-const eta = document.createElement("p");
-const libros = document.createElement("div");
+const bookList = USERS.fav_books.books.map((e) => {
+    const item = document.createElement ("ul");
+    item.textContent = e;
+    return item;
+})
 
-const bookList = USERS 
+function infoUsers () {
+    const infoTodo = document.getElementById("uno");
+
+    usuarios.forEach(user => {
+    const card = document.createElement("div");
+    
+    const id= document.createElement("h4");
+    username.textContent = `Username ${usuarios.username}`;
+    const usuario = document.createElement("h1");
+    const descrip = document.createElement("h2");
+    const eta = document.createElement("p");
+    const libros = document.createElement("div");
+    
+
+
+}
 
