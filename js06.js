@@ -82,18 +82,3 @@ function infoUsers () {
     const libros = userUsuarios.fav_books.books.map((e) => {
         const item = document.createElement ("ul");
         item.textContent = e;
-<<<<<<< HEAD
-        return item;
-    })
-    })
-=======
-        return item:
-    });
-    
-    document.createElement("div");
-
-    
-
-
-    });
->>>>>>> 59eae4a6ab8ddeb1aa3666f455e3da2c00271cbd
