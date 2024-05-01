@@ -52,13 +52,36 @@ const USERS = [ {
 }
 ];
 
+//Secciones
 
-const card = document.createElement("div");
-const id= document.createElement("h4");
-const usuario = document.createElement("h1");
-const descrip = document.createElement("h2");
-const eta = document.createElement("p");
-const libros = document.createElement("div");
+const bookList = USERS.fav_books.books.map((e) => {
+    const item = document.createElement ("ul");
+    item.textContent = e;
+    return item;
+})
 
-const bookList = USERS 
+function infoUsers () {
+    const infoTodo = document.getElementById("uno");
 
+    usuarios.forEach(usuarios => {
+    const card = document.createElement("div");
+    
+    const id= document.createElement("h4");
+    usuarios.textContent = `ID: ${usuarios.id}`;
+
+    const usuario = document.createElement("h1");
+    nombreUsuario.textContent = `Nombre de Usuario: ${usuarios,username}`;
+
+    const descrip = document.createElement("h2");
+    description.textContent = `Descripción: ${usuarios.description}` 
+
+    const eta = document.createElement("p");
+    edadUsuario.textContent = `Edad: ${usuarios,age}`
+
+
+    const libros = userUsuarios.fav_books.books.map((e) => {
+        const item = document.createElement ("ul");
+        item.textContent = e;
+        return item;
+    })
+    })
